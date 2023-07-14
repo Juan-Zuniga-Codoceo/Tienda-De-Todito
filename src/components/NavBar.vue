@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-app-bar
-        color="deep-purple"
+        color="black"
         dark
         >
         <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
@@ -9,7 +9,7 @@
         <v-toolbar-title>Tienda De Todito</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-badge :content="cartCount" class="ma-3" :value="cartCount>0">
-            <v-icon @click="redirectTo('Cart')">mdi-cart</v-icon>
+            <v-icon @click="redirectTo('checkout')">mdi-cart</v-icon>
         </v-badge>
         </v-app-bar>
 
@@ -57,17 +57,27 @@ export default {
                 {
                     icon:'mdi-home',
                     title:'Inicio',
-                    name:'Home'
+                    name:'home'
                 },
                 {
-                    icon:'mdi-bottle-wine',
-                    title:'Productos',
-                    name:'Products'
+                    icon:'mdi-face-man',
+                    title:'Vestuario Hombre',
+                    name:'RopaHombre'
+                },
+                {
+                    icon:'mdi-face-woman',
+                    title:'Vestuario Mujer',
+                    name:'RopaMujer'
+                },
+                {
+                    icon:'mdi-laptop',
+                    title:'Electronica',
+                    name:'electronica'
                 },
                 {
                     icon:'mdi-cart',
                     title:'Carrito',
-                    name:'Cart'
+                    name:'checkout'
                 },
                 {
                     icon:'mdi-account',

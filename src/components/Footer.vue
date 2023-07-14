@@ -6,7 +6,7 @@
         <v-card
         flat
         tile
-        class="deep-purple lighten-1 white--text text-center"
+        class="black-1 white--text text-center"
         width="100%"
         >
         <v-card-text>
